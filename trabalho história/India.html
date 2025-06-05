@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neocolonialismo</title>
+  <link rel="stylesheet" href="script.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-topo">
+      <img src="imagens/NEOCOLONIALISMO.png" alt="Logo do site" class="logo" />
+      <h1>Índia: Domínio e Resistência</h1>
+    </div>
+
+    <button id="menu-toggle">☰</button>
+    <button id="menu-close">← Fechar</button>
+
+    <nav id="menu" class="menu-escondido">
+      <a href="indexx.html">Início</a>
+      <a href="Congo.html">Congo</a>
+      <a href="China.html">China</a>
+      <a href="India.html">Índia</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>A Revolta dos Cipaios (1857-1858)</h2>
+      <p>
+        A Índia, inicialmente controlada pela Companhia das Índias Orientais, tornou-se palco de uma das maiores revoltas contra o domínio colonial britânico: a Revolta dos Cipaios, também chamada de Primeira Guerra de Independência Indiana. Os cipaios, soldados indianos que serviam no exército britânico, se rebelaram em 1857 devido a diversas insatisfações, incluindo questões religiosas, abusos e imposições culturais, como o uso de cartuchos que ofendiam crenças locais. A repressão britânica foi severa, e após a derrota da revolta, o controle da Índia passou diretamente para a Coroa Britânica, que adotou uma política de governança mais rígida para evitar novas insurreições.
+      </p>
+    </section>
+
+    <section>
+      <h2>Impactos Econômicos</h2>
+      <p>
+        Sob o domínio britânico, a economia da Índia foi profundamente transformada para atender às necessidades do império. A agricultura passou a priorizar a produção de matérias-primas como algodão, chá e ópio, que eram exportadas para as indústrias europeias. Essa mudança prejudicou a agricultura voltada para o sustento da população local, contribuindo para crises alimentares e fome em várias regiões. Além disso, a indústria têxtil indiana, antes renomada, entrou em declínio devido à concorrência desigual com os produtos manufaturados britânicos, o que aumentou a dependência econômica da colônia em relação à metrópole.
+      </p>
+    </section>
+
+    <section>
+      <h2>Impactos Culturais</h2>
+      <p>
+        O domínio britânico também impôs mudanças culturais profundas. A língua inglesa e o sistema educacional britânico foram incentivados, criando uma elite local familiarizada com os valores europeus e que frequentemente colaborava com o governo colonial. No entanto, essa imposição cultural gerou um processo de desvalorização das tradições, línguas e religiões locais, provocando tensões sociais. A miscigenação de influências culturais contribuiu para o surgimento de movimentos intelectuais que buscavam resgatar e valorizar a identidade indiana.
+      </p>
+    </section>
+
+    <section>
+      <h2>A Luta pela Independência</h2>
+      <p>
+        A partir do final do século XIX, cresceu na Índia um movimento de resistência ao domínio britânico, que se intensificou ao longo do século XX. Lideranças como Mahatma Gandhi adotaram a resistência pacífica e a desobediência civil como ferramentas para conquistar a independência, mobilizando milhões de indianos. Após décadas de luta, a Índia finalmente alcançou sua independência em 1947, embora tenha enfrentado o traumático processo de partição entre Índia e Paquistão, que causou conflitos sociais e religiosos. Apesar da independência política, o país continuou a enfrentar desafios econômicos e sociais herdados do período colonial.
+      </p>
+    </section>
+
+    <div class="container">
+      <img
+        class="imagem"
+        src="imagens/Guerradoscipaios.webp"
+        alt="Imagem da Guerra dos Cipaios"
+        onclick="abrirModal(this)"
+      />
+    </div>
+
+    <p>
+      A imagem da Guerra dos Cipaios geralmente retrata soldados indianos (cipaios) em confronto com tropas britânicas, simbolizando a revolta contra o domínio colonial britânico na Índia em 1857, marcada por resistência armada, tensões culturais e repressão violenta.
+    </p>
+
+    <div id="modal" class="modal" onclick="fecharModal()">
+      <span class="fechar">&times;</span>
+      <img class="modal-conteudo" id="imgModal" />
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 - Alexandre, Bryan, José e André. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="scrools.js"></script>
+  <script>
+    const btn = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('menu-ativo');
+    });
+  </script>
+
+</body>
+</html>

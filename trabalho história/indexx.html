@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neocolonialismo</title>
+  <link rel="stylesheet" href="script.css">
+</head>
+<body>
+  <header>
+    <div class="header-topo">
+      <img src="imagens/NEOCOLONIALISMO.png" alt="Logo do site" class="logo">
+      <h1>Neocolonialismo</h1>
+    </div>
+    <button id="menu-toggle">☰</button>
+    <button id="menu-close">← Fechar</button>
+
+    <nav id="menu" class="menu-escondido">
+      <a href="indexx.html">Início</a>
+      <a href="Congo.html">Congo</a>
+      <a href="China.html">China</a>
+      <a href="India.html">Índia</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>O que é Neocolonialismo?</h2>
+    <p>Neocolonialismo, também conhecido como Imperialismo, refere-se à dominação política e econômica exercida principalmente por países europeus e pelos Estados Unidos sobre territórios da África e da Ásia, especialmente entre os séculos XIX e XX. Esses países eram intensamente explorados em busca de mercados consumidores, matérias-primas e mão de obra barata.</p>
+
+    <h3>Ideologia que esteve por trás do Neocolonialismo</h3>
+    <p>No século XIX e início do século XX, havia a crença no chamado "racismo científico", segundo o qual era possível hierarquizar as raças humanas, classificando algumas como superiores a outras. Essa ideia, hoje totalmente superada pela ciência, era usada como justificativa para o domínio sobre povos africanos e asiáticos.</p>
+
+    <p>Outra ideologia que teve influência foi o darwinismo social, que aplicava a teoria da evolução às sociedades humanas, sugerindo que algumas estavam mais “evoluídas” do que outras. A sociedade europeia se via como o ápice da civilização, enquanto os povos colonizados eram considerados “primitivos”.</p>
+
+    <p>O escritor britânico Rudyard Kipling expressou essa visão na ideia do "fardo do homem branco", que afirmava ser responsabilidade dos europeus “civilizar” os demais povos. Essas visões foram posteriormente rejeitadas por estudos mais aprofundados nas áreas da antropologia e sociologia.</p>
+
+    
+    <div class="container">
+        <img class="imagem" src="imagens/imperialismo.jpg" alt="Imagem da Conferência de Berlim" onclick="abrirModal(this)">
+    </div>
+    <h4>essa imagem é uma charge satirizando os INGLÊSES</h4>
+
+<div id="modal" class="modal" onclick="fecharModal()">
+  <span class="fechar">&times;</span>
+  <img class="modal-conteudo" id="imgModal">
+</div>
+
+<div class="box-reflexao">
+  <h5>Frases de Impacto sobre o Neocolonialismo</h5>
+  <ul>
+    <li><strong>"O fardo do homem branco."</strong><br>
+      <span>Frase de Rudyard Kipling, usada para justificar a “missão civilizadora” dos europeus sobre povos considerados "inferiores". Representa o racismo embutido nas ações coloniais.</span>
+    </li>
+    <li><strong>"Dividam a África como um bolo."</strong><br>
+      <span>Representa o espírito da Conferência de Berlim (1884-85), onde líderes europeus repartiram o continente africano em territórios de exploração.</span>
+    </li>
+    <li><strong>"A civilização deve ser levada aos bárbaros."</strong><br>
+      <span>Expressão comum entre os colonizadores, usada para justificar a imposição de cultura e religião europeias.</span>
+    </li>
+    <li><strong>"Tragam-nos ouro, terra e obediência."</strong><br>
+      <span>Reflete os objetivos econômicos e políticos por trás do neocolonialismo.</span>
+    </li>
+    <li><strong>"Imperialismo é o sistema onde a riqueza de poucos é construída sobre a pobreza de muitos."</strong><br>
+      <span>Reflete a crítica marxista sobre o impacto econômico do neocolonialismo.</span>
+    </li>
+    <li><strong>"Colônias não são apenas territórios, são mercados, fontes e palcos de poder."</strong><br>
+      <span>Frase que mostra a visão estratégica dos impérios coloniais.</span>
+    </li>
+    <li><strong>"Não foi uma conquista, mas uma invasão."</strong><br>
+      <span>Afirmação usada por historiadores para descrever a dominação colonial.</span>
+    </li>
+    <li><strong>"O domínio político desaparece, mas o controle econômico permanece."</strong><br>
+      <span>Resume a transição do colonialismo clássico para o neocolonialismo.</span>
+    </li>
+    <li><strong>"Liberdade sem justiça econômica é uma ilusão."</strong><br>
+      <span>Reflexão sobre como a independência política muitas vezes não significa autonomia real.</span>
+    </li>
+  </ul>
+</div>
+
+  </main>
+
+  <footer>
+    <p>© 2025 - Alexandre, Bryan, José e André. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="scrools.js"></script>
+  <script>
+    const btn = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('menu-ativo');
+    });
+  </script>
+</body>
+</html>

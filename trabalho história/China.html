@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Neocolonialismo na China</title>
+  <link rel="stylesheet" href="script.css" />
+</head>
+<body>
+  <header>
+    <div class="header-topo">
+      <img src="imagens/NEOCOLONIALISMO.png" alt="Logo do site" class="logo" />
+      <h1>China: A Influência do Neocolonialismo Europeu</h1>
+    </div>
+
+    <button id="menu-toggle">☰</button>
+    <button id="menu-close">← Fechar</button>
+
+    <nav id="menu" class="menu-escondido">
+      <a href="indexx.html">Início</a>
+      <a href="Congo.html">Congo</a>
+      <a href="China.html">China</a>
+      <a href="India.html">Índia</a>
+    </nav>
+  </header>
+
+  <main>
+  
+    <section>
+      <h3>As Guerras do Ópio e Tratados Desiguais</h3>
+      <p>
+        O imperialismo na China começou a se intensificar no século XIX com as Guerras do Ópio (1839-1842 e 1856-1860). As potências europeias, especialmente o Reino Unido, buscavam abrir o mercado chinês para o comércio de ópio, que era ilegal na China. Após derrotas militares, a China foi obrigada a assinar os chamados “tratados desiguais”, como o Tratado de Nanquim em 1842. Esses tratados forçaram a China a ceder territórios (como Hong Kong), abrir vários portos ao comércio estrangeiro e conceder extraterritorialidade a cidadãos estrangeiros, minando sua soberania nacional.
+      </p>
+    </section>
+
+    <section>
+      <h3>Disputa entre Potências e a Partilha da China</h3>
+      <p>
+        A partir da segunda metade do século XIX, além da Grã-Bretanha, outras potências imperialistas, incluindo França, Alemanha, Rússia e posteriormente o Japão, competiram para garantir zonas de influência, concessões comerciais e recursos naturais na China. Essas potências construíram ferrovias, instalações portuárias e extraiam riquezas, sem respeito à autonomia chinesa. Esse processo fragmentou o país, gerando instabilidade política e social.
+      </p>
+    </section>
+
+    <section>
+      <h3>Revolta dos Boxers</h3>
+      <p>
+        Em resposta ao crescente domínio estrangeiro e às consequências negativas para a sociedade chinesa, eclodiu a Revolta dos Boxers (1899-1901), um movimento nacionalista e anti-imperialista. Os Boxers, grupo de artes marciais tradicionalistas, atacaram estrangeiros e missionários cristãos. A revolta foi esmagada por uma aliança militar internacional, que impôs novas punições à China, aprofundando ainda mais seu controle estrangeiro.
+      </p>
+    </section>
+
+    <section>
+      <h3>O Declínio da Dinastia Qing e a Ascensão do Nacionalismo</h3>
+      <p>
+        O neocolonialismo enfraqueceu decisivamente a dinastia Qing, que enfrentou revoltas internas, corrupção e crises econômicas. No início do século XX, o sentimento nacionalista cresceu, culminando na Revolução de 1911, que derrubou a monarquia imperial e instaurou a República da China. Entretanto, o país permaneceu fragmentado e vulnerável a interferências estrangeiras, em meio a guerras civis e a ameaça crescente do Japão.
+      </p>
+    </section>
+
+    <section>
+      <h3>A Expansão Imperialista Japonesa</h3>
+      <p>
+        O Japão, após se modernizar rapidamente na Era Meiji, tornou-se uma potência imperialista e expandiu sua influência sobre a China, invadindo a Manchúria em 1931 e dando início à Segunda Guerra Sino-Japonesa em 1937. O conflito causou enorme destruição e sofrimento ao povo chinês. A derrota japonesa na Segunda Guerra Mundial em 1945 foi um ponto decisivo para o fim da presença colonial direta estrangeira no país.
+      </p>
+    </section>
+
+    <section>
+      <h3>A Revolução Comunista e o Fim do Neocolonialismo</h3>
+      <p>
+        Em 1949, o Partido Comunista Chinês, liderado por Mao Tsé-Tung, assumiu o poder, instaurando a República Popular da China. A nova liderança rompeu com os tratados desiguais e iniciou um processo de reconstrução nacional, buscando reverter os danos do neocolonialismo e recuperar a soberania plena da China.
+      </p>
+      <p>
+        Em 1984, foi firmado o acordo conhecido como Declaração Conjunta entre a China e o Reino Unido, que estabeleceu a devolução de Hong Kong à China em 1997. O modelo “um país, dois sistemas” permitiu a Hong Kong manter autonomia econômica e política relativa, marcando simbolicamente o fim do domínio colonial europeu na região.
+      </p>
+    </section>
+
+    <div class="container">
+      <img
+        class="imagem"
+        src="imagens/ChinaIMPERIALISMO.png"
+        alt="Imagem de uma charge do repartimento da China"
+        onclick="abrirModal(this)"
+      />
+    </div>
+
+    <p>
+      Na imagem, representantes de algumas potências imperialistas repartem fatias do que parece ser uma torta ou pizza onde se lê "China". Da esquerda para a direita, estão a rainha Vitória (Inglaterra), o kaiser Guilherme II (Alemanha), o czar Nicolau II (Rússia) e o imperador Mutsuhito (Japão). Os três primeiros seguram facas, enquanto o imperador japonês observa preocupado, aguardando "o que vai sobrar". Atrás do czar, a França é representada por uma mulher com o barrete frígio, símbolo da Revolução Francesa. Ao fundo, a China é simbolizada por um velho em desespero, impotente diante da divisão.
+    </p>
+
+    <div id="modal" class="modal" onclick="fecharModal()">
+      <span class="fechar">&times;</span>
+      <img class="modal-conteudo" id="imgModal" />
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 - Alexandre, Bryan, José e André. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="scrools.js"></script>
+  <script>
+    const btn = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('menu-ativo');
+    });
+  </script>
+</body>
+</html>

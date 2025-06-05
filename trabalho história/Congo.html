@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neocolonialismo</title>
+  <link rel="stylesheet" href="script.css" />
+</head>
+<body>
+  <header>
+    <div class="header-topo">
+      <img src="imagens/NEOCOLONIALISMO.png" alt="Logo do site" class="logo" />
+      <h1>Congo: Exploração, Violência e Resistência</h1>
+    </div>
+    <button id="menu-toggle">☰</button>
+    <button id="menu-close">← Fechar</button>
+
+    <nav id="menu" class="menu-escondido">
+      <a href="indexx.html">Início</a>
+      <a href="Congo.html">Congo</a>
+      <a href="China.html">China</a>
+      <a href="India.html">Índia</a>
+    </nav>
+  </header>
+
+  <main>
+
+  <h3>Interesse Europeu e Recursos Naturais</h3>
+  <p>
+    O Congo despertou grande interesse das potências europeias no século XIX devido à abundância de recursos naturais, como borracha, marfim, cobre e outros minerais. Durante a Conferência de Berlim (1884-1885), organizada na Alemanha, as nações europeias dividiram o continente africano entre si, formalizando a ocupação e exploração imperialista — o território congolês foi entregue ao rei Leopoldo II da Bélgica como propriedade pessoal, sob o nome de "Estado Livre do Congo".
+  </p>
+
+  <h3>Domínio de Leopoldo II e o Genocídio</h3>
+  <p>
+    Embora chamado de “livre”, o Estado do Congo foi, na prática, administrado como uma empresa privada. A população local foi forçada a extrair borracha sob regime de extrema violência. Há registros de amputações, tortura, assassinatos e destruição de aldeias inteiras. Estima-se que até 10 milhões de congoleses tenham morrido nesse período, caracterizado por muitos historiadores como um dos maiores genocídios da história moderna.
+  </p>
+
+  <h3>Colonização Oficial Belga</h3>
+  <p>
+    Após denúncias internacionais sobre os abusos, o território passou oficialmente ao controle do Estado belga em 1908, tornando-se o "Congo Belga". Mesmo com melhorias na infraestrutura, como construção de ferrovias, estradas e hospitais, a lógica de exclusão social e exploração econômica se manteve. Poucos congoleses tinham acesso à educação e à vida política, perpetuando um sistema desigual.
+  </p>
+
+  <h3>Independência e Neocolonialismo</h3>
+  <p>
+    O Congo conquistou sua independência em 1960, mas herdou uma administração frágil e marcada por tensões políticas. Patrice Lumumba, primeiro-ministro eleito, buscava autonomia real e soberania sobre os recursos do país. No entanto, ele foi assassinado em 1961, com envolvimento de potências estrangeiras como os Estados Unidos e a Bélgica. O domínio colonial direto terminou, mas o neocolonialismo persistiu, com potências globais mantendo influência sobre a economia e política congolesa.
+  </p>
+
+  <h3>Consequências Atuais</h3>
+  <p>
+    Apesar de ser um dos países mais ricos em recursos naturais do mundo, o Congo ainda enfrenta pobreza extrema, instabilidade política, conflitos armados e falta de acesso a serviços básicos como saúde, educação e infraestrutura. Esses desafios são heranças diretas do processo colonial e neocolonial que moldou sua história moderna.
+  </p>
+
+    <div class="container">
+      <img
+        class="imagem"
+        src="imagens/Conferencia.jpg"
+        alt="Imagem da Conferência de Berlim"
+        onclick="abrirModal(this)"
+      />
+    </div>
+
+    <h4>Retrato da Conferência de Berlim que organizou a ocupação do continente africano pelas nações europeias.</h4>
+
+    <div id="modal" class="modal" onclick="fecharModal()">
+      <span class="fechar">&times;</span>
+      <img class="modal-conteudo" id="imgModal" />
+    </div>
+  </main>
+
+  <script src="scrools.js"></script>
+  <script>
+    const btn = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('menu-ativo');
+    });
+  </script>
+</body>
+</html>
